@@ -273,14 +273,7 @@ paths:
       tags:
         - network
 components:
-  securitySchemes:
-    api_key:
-      type: apiKey
-      name: x-api-key
-      in: header
-    BasicAuth:
-      type: http
-      scheme: basic
+  
   schemas:
     user:            
       type: object
