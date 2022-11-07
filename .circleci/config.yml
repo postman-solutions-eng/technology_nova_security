@@ -1,26 +1,28 @@
-# Use the latest 2.1 version of CircleCI pipeline process engine.
-# See: https://circleci.com/docs/2.0/configuration-reference
 version: 2.1
 
-# Define a job to be invoked later in a workflow.
-# See: https://circleci.com/docs/2.0/configuration-reference/#jobs
 jobs:
-  say-hello:
-    # Specify the execution environment. You can specify an image from Dockerhub or use one of our Convenience Images from CircleCI's Developer Hub.
-    # See: https://circleci.com/docs/2.0/configuration-reference/#docker-machine-macos-windows-executor
+  automated-api-tests:
     docker:
-      - image: cimg/base:stable
-    # Add steps to the job
-    # See: https://circleci.com/docs/2.0/configuration-reference/#steps
+      - image: cimg/base:2021.04
     steps:
       - checkout
       - run:
-          name: "Say hello"
-          command: "echo Hello, World!"
+          name: Install Postman CLI
+          command: |
+            curl -o- "https://dl-cli.pstmn.io/install/linux64.sh" | sh
+      - run:
+          name: Login using your API key
+          command: postman login --with-api-key $POSTMAN_API_KEY
+      - run: |
+            postman collection run "postman/collections/NOVA Security API.json" -e "16952209-55f86a83-0b29-4399-8be7-ae62018e98ce" --integration-id "126710-${CIRCLE_WORKFLOW_JOB_ID}"
+            postman collection run "postman/collections/NOVA Security Tests.json" -e "16863310-09784d6a-7320-45d6-b9b3-578eb1063b2c" --integration-id "126710-${CIRCLE_WORKFLOW_JOB_ID}"
+            postman collection run "postman/collections/NOVA Security User Management.json" -e "16952209-6986efd6-be77-482f-9db5-4bfec4eceaca" --integration-id "126710-${CIRCLE_WORKFLOW_JOB_ID}"
+      - run:
+          name: Lint your API using Postman CLI
+          command: postman api lint --integration-id 126710
 
-# Invoke jobs via workflows
-# See: https://circleci.com/docs/2.0/configuration-reference/#workflows
 workflows:
-  say-hello-workflow:
+  version: 2
+  automated-api-tests:
     jobs:
-      - say-hello
+      - automated-api-tests
