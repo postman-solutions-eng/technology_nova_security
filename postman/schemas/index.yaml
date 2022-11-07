@@ -2,12 +2,10 @@ openapi: 3.0.3
 servers:
   - url: https://api.postmanova.com
   - url: https://api1.postmanova.com
-security:
-  - BasicAuth: []
+
 info:
   contact: {
-    email: cooper@123abc.com,
-    url: https://www.postman.com
+   
   }
   description: |-
     **The NOVA Security User Management API allows you to programmatically access NOVA network users and perform admin tasks.**
@@ -273,7 +271,14 @@ paths:
       tags:
         - network
 components:
-  
+  securitySchemes:
+    api_key:
+      type: apiKey
+      name: x-api-key
+      in: header
+    BasicAuth:
+      type: http
+      scheme: basic
   schemas:
     user:            
       type: object
