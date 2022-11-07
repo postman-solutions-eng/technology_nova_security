@@ -14,9 +14,7 @@ jobs:
           name: Login using your API key
           command: postman login --with-api-key $POSTMAN_API_KEY
       - run: |
-            postman collection run "postman/collections/NOVA Security API.json" -e "16952209-55f86a83-0b29-4399-8be7-ae62018e98ce" --integration-id "126710-${CIRCLE_WORKFLOW_JOB_ID}"
             postman collection run "postman/collections/NOVA Security Tests.json" -e "16863310-09784d6a-7320-45d6-b9b3-578eb1063b2c" --integration-id "126710-${CIRCLE_WORKFLOW_JOB_ID}"
-            postman collection run "postman/collections/NOVA Security User Management.json" -e "16952209-6986efd6-be77-482f-9db5-4bfec4eceaca" --integration-id "126710-${CIRCLE_WORKFLOW_JOB_ID}"
       - run:
           name: Lint your API using Postman CLI
           command: postman api lint --integration-id 126710
