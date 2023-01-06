@@ -5,7 +5,8 @@ servers:
 
 info:
   contact: {
-   
+    email: "admin@admin.com",
+    url: "http://www.postman.com"
   }
   description: |-
     **The NOVA Security User Management API allows you to programmatically access NOVA network users and perform admin tasks.**
@@ -55,6 +56,8 @@ info:
   title: NOVA Security API
   version: 1.0.0
   x-providerName: postmanova.com
+security:
+  - apiKey: []
 tags:
   - description: This folder contains the requests around system users available to administrative users.
     name: Admin
