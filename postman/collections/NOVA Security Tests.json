@@ -437,7 +437,10 @@
 									"    var jsonData = pm.response.json();",
 									"    pm.expect(jsonData.user.name).to.eql(\"George Costanza\");",
 									"});",
-									""
+									"",
+									"pm.test(\"Response time is less than 1000ms\", function () {",
+									"    pm.expect(pm.response.responseTime).to.be.below(1000);",
+									"});"
 								],
 								"type": "text/javascript"
 							}
