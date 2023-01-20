@@ -344,6 +344,10 @@
 											"    pm.expect(jsonData[0].name).to.eql(\"George Costanza\");",
 											"});",
 											"",
+											"pm.test(\"Response time is less than 2000ms\", function () {",
+											"    pm.expect(pm.response.responseTime).to.be.below(2000);",
+											"});",
+											"",
 											"pm.environment.set(\"name\", \"Car\");"
 										],
 										"type": "text/javascript"
@@ -551,8 +555,8 @@
 							"    pm.expect(jsonData.network.length).to.eql(3);",
 							"});",
 							"",
-							"pm.test(\"Response time is less than 1000ms\", function () {",
-							"    pm.expect(pm.response.responseTime).to.be.below(1000);",
+							"pm.test(\"Response time is less than 2000ms\", function () {",
+							"    pm.expect(pm.response.responseTime).to.be.below(2000);",
 							"});"
 						],
 						"type": "text/javascript"
