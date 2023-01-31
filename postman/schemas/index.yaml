@@ -1,12 +1,11 @@
 openapi: 3.0.3
 servers:
   - url: https://api.postmanova.com
-  - url: https://api1.postmanova.com
+#  - url: https://api1.postmanova.com
 
 info:
   contact: {
-    email: "admin@admin.com",
-    url: "http://www.postman.com"
+   
   }
   description: |-
     **The NOVA Security User Management API allows you to programmatically access NOVA network users and perform admin tasks.**
@@ -33,7 +32,7 @@ info:
 
     # Terms to Know
 
-    A **NOVA Network User** is defined as any user who has logged on to your service that is monitored under the NOVA security umbrella. You can configure which services are covered in your partner portal. 
+    A **NOVA network user** is defined as any user who has logged on to your service that is monitored under the NOVA security umbrella. You can configure which services are covered in your partner portal. 
 
 
     # Authentication
@@ -56,8 +55,6 @@ info:
   title: NOVA Security API
   version: 1.0.0
   x-providerName: postmanova.com
-security:
-  - apiKey: []
 tags:
   - description: This folder contains the requests around system users available to administrative users.
     name: Admin
