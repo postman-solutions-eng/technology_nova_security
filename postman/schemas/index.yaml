@@ -2,10 +2,12 @@ openapi: 3.0.3
 servers:
   - url: https://api.postmanova.com
 #  - url: https://api1.postmanova.com
-
+security:
+    - testAuth : []
 info:
   contact: {
-   
+    url: https://example.com/support,
+    email: johnsmith@postmanova.com
   }
   description: |-
     **The NOVA Security User Management API allows you to programmatically access NOVA network users and perform admin tasks.**
