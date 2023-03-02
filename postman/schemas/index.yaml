@@ -1,7 +1,6 @@
 openapi: 3.0.4
 servers:
   - url: https://api.postmanova.com
-#  - url: https://api1.postmanova.com
 security:
     - testAuth : []
 info:
