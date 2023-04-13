@@ -1,6 +1,7 @@
 openapi: 3.0.3
-x-apiname: novaSecurityApi
-x-responsetime: 10000
+# x-apiname: novaSecurityApi
+# x-responsetime: 10000
+
 x-providerName: postmanova.com
 
 servers:
@@ -64,8 +65,8 @@ info:
     url: https://opensource.org/license/bsd-1-clause/
   termsOfService: https://example.com/tos
   
-security:
-  - api_key: []
+# security:
+#   - api_key: []
 
 tags:
   - description: This folder contains the requests around system users available to administrative users.
@@ -184,7 +185,7 @@ paths:
         - Admin 
     parameters:
       - in: path
-        description: Get user
+#        description: Get user
         example: 1234-4321-1234-4321
         name: adminId
         required: true
@@ -193,7 +194,7 @@ paths:
           type: string
       - in: path
         description: Get user
-        example: 1234-4321-1234-4321
+#        example: 1234-4321-1234-4321
         name: userId
         required: true
         schema:
@@ -300,8 +301,8 @@ paths:
                     type: array
                 type: object
           description: Valid Response
-        "500":
-          description: Internal server error
+#        "500":
+#          description: Internal server error
       summary: All network usage
       tags:
         - network
