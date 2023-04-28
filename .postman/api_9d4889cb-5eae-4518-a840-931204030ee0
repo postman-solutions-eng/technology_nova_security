@@ -9,6 +9,7 @@ id = 9d4889cb-5eae-4518-a840-931204030ee0
 
 [config.relations.collections]
 rootDirectory = postman/collections
+files[] = {"id":"16952209-4805f5f6-a300-4eaf-a10f-004a6bcda37e","path":"Consumer-driven Contract Tests.json","metaData":{}}
 files[] = {"id":"25749314-89984f9a-6b7b-4384-860b-cc90e3218002","path":"Nova - Documentation.json","metaData":{}}
 files[] = {"id":"25749314-fdeadd0e-44c5-4e9c-a43f-c84d4ff2beab","path":"Nova Contract Tests.json","metaData":{}}
 files[] = {"id":"25749314-f7488590-6d9e-4265-84ca-bbb60f27d2ac","path":"Nova Docs.json","metaData":{}}
