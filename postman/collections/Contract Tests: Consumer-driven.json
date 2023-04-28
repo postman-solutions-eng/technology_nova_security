@@ -2,7 +2,7 @@
 	"info": {
 		"_postman_id": "4805f5f6-a300-4eaf-a10f-004a6bcda37e",
 		"name": "Contract Tests: Consumer-driven",
-		"description": "True to this image, the items in this collection were created based on the following customer use case:\n\nConsumers should be able to express the contract of an API without using an API spec. Producers can then use the contract to implement the API and confirm that conforms to the consumer-provided contract.\n\n**Note that it is the recommendation of Postman that API specifications be used to define API contracts.** Still, many organizations are either still \"code first\" (instead of \"API first\") or are in some state of flux from the latter to the former.\n\nA consumer can create a collection like this one and then either in the same workspace, in a different workspace within the same organization, or in a partner workspace (if two different companies are collaborating), users can communicate a contract, collaborate around it, iterate over it, and implement and end-to-end process workflow which encapsulates all of these items.\n\n<img src=\"https://content.pstmn.io/b8a8cb2d-ce72-4d73-9846-75c1969c0caa/MV9zLXVqckdReVpzekJjU2RZM1BDeWJ3LnBuZw==\">",
+		"description": "### Consumer-driven Contract Testing\n\nA consumer can create a collection like this one and then either in the same workspace, in a different workspace within the same organization, or in a partner workspace (if two different companies are collaborating), users can communicate a contract, collaborate around it, iterate over it, and implement an end-to-end process workflow which encapsulates all of these items.\n\n**Note that it is the recommendation of Postman that API specifications be used to define API contracts.** Still, many organizations are either still \"code first\" (instead of \"API first\") or are in some state of flux from the latter to the former.\n\n<img src=\"https://content.pstmn.io/b8a8cb2d-ce72-4d73-9846-75c1969c0caa/MV9zLXVqckdReVpzekJjU2RZM1BDeWJ3LnBuZw==\">",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_uid": "16952209-4805f5f6-a300-4eaf-a10f-004a6bcda37e"
 	},
@@ -463,48 +463,48 @@
 	],
 	"variable": [
 		{
-			"id": "67524822-a092-47c8-951c-d911ce29673c",
+			"id": "16fb6d80-e2e2-4054-b9c3-10407f47b7fa",
 			"key": "--- Configuration properties ---",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "2055ec46-cb9c-441f-b3ff-06f1e769908f",
+			"id": "f45e5dd8-2cc6-47a3-bfd4-f53e8b473775",
 			"key": "baseUrl",
 			"value": "https://cd0c3b1a-ed6a-4844-9f1f-d1cc89bb4ebc.mock.pstmn.io",
 			"type": "string"
 		},
 		{
-			"id": "819d5575-3520-49e0-b950-dc1db886687e",
+			"id": "4646ac4f-6990-402d-8899-4b82f8320cf9",
 			"key": "useResponsesWithErrors",
 			"value": "true",
 			"type": "string"
 		},
 		{
-			"id": "efae133a-d07f-4c72-b283-72133c2443c2",
+			"id": "c1260fe8-0a7e-4426-a424-a37747e5a894",
 			"key": "--- Demonstration properties: Response Tests ---",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "2b02292c-da13-4509-b067-bd428c82edc7",
+			"id": "43c4237a-3fc7-4a7a-86f1-0cb133e48836",
 			"key": "validNetworksList",
 			"value": "Instance eu-1,Instance us-1,Instance ca-1"
 		},
 		{
-			"id": "0d724968-6f43-4c3e-8eb4-9abc4453bda4",
+			"id": "5b939008-470b-4443-b71a-170f0b755faa",
 			"key": "requiredNetworkProperties",
 			"value": "instanceId,name,users",
 			"type": "string"
 		},
 		{
-			"id": "168ccb1f-0c24-46a4-b699-0ce4647eea94",
+			"id": "5bebb5da-49e6-4b4c-84a4-4095bf22f648",
 			"key": "optionalNetworkProperties",
 			"value": "weekly_active_users,average_minutes_per_user,monthly_active_users",
 			"type": "string"
 		},
 		{
-			"id": "013fd044-e67f-4a21-b471-b188455df0a1",
+			"id": "d3602199-32bb-4247-8b50-b004099b940e",
 			"key": "--- Demonstration properties: Request Tests ---",
 			"value": "",
 			"type": "string"
