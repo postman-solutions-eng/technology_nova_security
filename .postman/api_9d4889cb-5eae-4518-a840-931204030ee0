@@ -9,13 +9,11 @@ id = 9d4889cb-5eae-4518-a840-931204030ee0
 
 [config.relations.collections]
 rootDirectory = postman/collections
-files[] = {"id":"16952209-4805f5f6-a300-4eaf-a10f-004a6bcda37e","path":"Consumer-driven Contract Tests.json","metaData":{}}
-files[] = {"id":"25749314-89984f9a-6b7b-4384-860b-cc90e3218002","path":"Nova - Documentation.json","metaData":{}}
-files[] = {"id":"25749314-fdeadd0e-44c5-4e9c-a43f-c84d4ff2beab","path":"Nova Contract Tests.json","metaData":{}}
-files[] = {"id":"25749314-f7488590-6d9e-4265-84ca-bbb60f27d2ac","path":"Nova Docs.json","metaData":{}}
-files[] = {"id":"25749314-766c655b-5bf3-4e27-aa3d-6175cde426bd","path":"NOVA Security API.json","metaData":{"generateCollectionPreferences":"{\"updateCollectionSync\":false}"}}
-files[] = {"id":"25749314-7af10eb8-0057-44aa-b9aa-8d5321daa469","path":"NOVA Security Tests.json","metaData":{}}
-files[] = {"id":"25749314-611f5d8a-9071-40e7-ba09-0ec10f0e8c23","path":"NOVA Security User Management.json","metaData":{}}
+files[] = {"id":"16952209-4805f5f6-a300-4eaf-a10f-004a6bcda37e","path":"Contract Tests: Consumer-driven.json","metaData":{}}
+files[] = {"id":"25749314-fdeadd0e-44c5-4e9c-a43f-c84d4ff2beab","path":"Contract Tests: Producer-driven.json","metaData":{}}
+files[] = {"id":"25749314-89984f9a-6b7b-4384-860b-cc90e3218002","path":"Documentation.json","metaData":{}}
+files[] = {"id":"25749314-766c655b-5bf3-4e27-aa3d-6175cde426bd","path":"Functional Tests.json","metaData":{}}
+files[] = {"id":"25749314-7af10eb8-0057-44aa-b9aa-8d5321daa469","path":"Security Tests.json","metaData":{}}
 
 [config.relations.collections.metaData]
 

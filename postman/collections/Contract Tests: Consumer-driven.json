@@ -1,7 +1,7 @@
 {
 	"info": {
 		"_postman_id": "4805f5f6-a300-4eaf-a10f-004a6bcda37e",
-		"name": "Consumer-driven Contract Tests",
+		"name": "Contract Tests: Consumer-driven",
 		"description": "True to this image, the items in this collection were created based on the following customer use case:\n\nConsumers should be able to express the contract of an API without using an API spec. Producers can then use the contract to implement the API and confirm that conforms to the consumer-provided contract.\n\n**Note that it is the recommendation of Postman that API specifications be used to define API contracts.** Still, many organizations are either still \"code first\" (instead of \"API first\") or are in some state of flux from the latter to the former.\n\nA consumer can create a collection like this one and then either in the same workspace, in a different workspace within the same organization, or in a partner workspace (if two different companies are collaborating), users can communicate a contract, collaborate around it, iterate over it, and implement and end-to-end process workflow which encapsulates all of these items.\n\n<img src=\"https://content.pstmn.io/b8a8cb2d-ce72-4d73-9846-75c1969c0caa/MV9zLXVqckdReVpzekJjU2RZM1BDeWJ3LnBuZw==\">",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_uid": "16952209-4805f5f6-a300-4eaf-a10f-004a6bcda37e"
