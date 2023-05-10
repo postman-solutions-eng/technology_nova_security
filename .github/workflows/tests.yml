@@ -14,6 +14,6 @@ jobs:
         run: postman login --with-api-key ${{ secrets.POSTMAN_API_KEY }}
       - name: Run API tests
         run: |
-          postman collection run "${{ github.workspace }}/postman/collections/NOVA Security Tests.json" -e "16863310-09784d6a-7320-45d6-b9b3-578eb1063b2c" --integration-id "129284-${{ github.run_id }}"
+          postman collection run "${{ github.workspace }}/postman/collections/Contract Tests.json" -e "16952209-38da1e52-f892-416c-bb6a-88b41242e333" --integration-id "129284-${{ github.run_id }}"
           # Lint your API using Postman CLI
           postman api lint --integration-id 129284
