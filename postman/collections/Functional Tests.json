@@ -18,6 +18,20 @@
 							"item": [
 								{
 									"name": "Delete a network user",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"id": "f40fccaa-df45-4845-881f-6fb926867f35",
+												"exec": [
+													"pm.test(\"Status code is 200\", function () {",
+													"    pm.response.to.have.status(200);",
+													"});"
+												],
+												"type": "text/javascript"
+											}
+										}
+									],
 									"id": "a048a6d3-f4f5-42a8-87ba-97ac2beb51ed",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
@@ -101,6 +115,20 @@
 								},
 								{
 									"name": "Get a network user",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"id": "085bd51b-c066-4ebe-ae65-4d1e36c86a63",
+												"exec": [
+													"pm.test(\"Status code is 200\", function () {",
+													"    pm.response.to.have.status(200);",
+													"});"
+												],
+												"type": "text/javascript"
+											}
+										}
+									],
 									"id": "1d9095a6-591f-4eb5-9bbc-603e13608560",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
@@ -184,6 +212,20 @@
 								},
 								{
 									"name": "Update a network user",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"id": "ce468fa2-dc2f-4d1a-8162-202a37eadf54",
+												"exec": [
+													"pm.test(\"Status code is 200\", function () {",
+													"    pm.response.to.have.status(200);",
+													"});"
+												],
+												"type": "text/javascript"
+											}
+										}
+									],
 									"id": "3100b206-eb72-491b-8549-0f80e20f607d",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
@@ -298,6 +340,20 @@
 						},
 						{
 							"name": "Get all network users",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "b42fbe2b-e84f-49f4-9265-6fac80809a1d",
+										"exec": [
+											"pm.test(\"Status code is 200\", function () {",
+											"    pm.response.to.have.status(200);",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
 							"id": "40388c0a-29df-43ac-af01-00090f940b9a",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -372,6 +428,20 @@
 				},
 				{
 					"name": "Create network user",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "e48a4e3d-1481-47e8-84fa-3f3ed167054d",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
 					"id": "a1f40c3e-0011-45fa-b301-f5c73187f97d",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
