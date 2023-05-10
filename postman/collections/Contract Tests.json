@@ -1,7 +1,7 @@
 {
 	"info": {
 		"_postman_id": "4805f5f6-a300-4eaf-a10f-004a6bcda37e",
-		"name": "Contract Tests: Consumer-driven",
+		"name": "Contract Tests",
 		"description": "### Consumer-driven Contract Testing\n\nA consumer can create a collection like this one and then either in the same workspace, in a different workspace within the same organization, or in a partner workspace (if two different companies are collaborating), users can communicate a contract, collaborate around it, iterate over it, and implement an end-to-end process workflow which encapsulates all of these items.\n\n**Note that it is the recommendation of Postman that API specifications be used to define API contracts.** Still, many organizations are either still \"code first\" (instead of \"API first\") or are in some state of flux from the latter to the former.\n\n<img src=\"https://content.pstmn.io/b8a8cb2d-ce72-4d73-9846-75c1969c0caa/MV9zLXVqckdReVpzekJjU2RZM1BDeWJ3LnBuZw==\">",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_uid": "16952209-4805f5f6-a300-4eaf-a10f-004a6bcda37e"
@@ -463,48 +463,48 @@
 	],
 	"variable": [
 		{
-			"id": "16fb6d80-e2e2-4054-b9c3-10407f47b7fa",
+			"id": "aee883be-c677-4dee-ba63-6d20cabeb332",
 			"key": "--- Configuration properties ---",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "f45e5dd8-2cc6-47a3-bfd4-f53e8b473775",
+			"id": "69caed99-7125-47bb-ba56-f85d4d2d1c68",
 			"key": "baseUrl",
 			"value": "https://cd0c3b1a-ed6a-4844-9f1f-d1cc89bb4ebc.mock.pstmn.io",
 			"type": "string"
 		},
 		{
-			"id": "4646ac4f-6990-402d-8899-4b82f8320cf9",
+			"id": "e359e5d9-6a30-4d86-ba6d-bf5506ffe0e0",
 			"key": "useResponsesWithErrors",
 			"value": "true",
 			"type": "string"
 		},
 		{
-			"id": "c1260fe8-0a7e-4426-a424-a37747e5a894",
+			"id": "58cfc3bd-41bf-4686-aab5-89038e25fbd2",
 			"key": "--- Demonstration properties: Response Tests ---",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "43c4237a-3fc7-4a7a-86f1-0cb133e48836",
+			"id": "6ff80190-7ace-4e21-a903-89df51fe4210",
 			"key": "validNetworksList",
 			"value": "Instance eu-1,Instance us-1,Instance ca-1"
 		},
 		{
-			"id": "5b939008-470b-4443-b71a-170f0b755faa",
+			"id": "38d57df5-3fbf-43db-b90c-401c362c6683",
 			"key": "requiredNetworkProperties",
 			"value": "instanceId,name,users",
 			"type": "string"
 		},
 		{
-			"id": "5bebb5da-49e6-4b4c-84a4-4095bf22f648",
+			"id": "a3d0e44f-fda1-41f7-abbb-7840073225a8",
 			"key": "optionalNetworkProperties",
 			"value": "weekly_active_users,average_minutes_per_user,monthly_active_users",
 			"type": "string"
 		},
 		{
-			"id": "d3602199-32bb-4247-8b50-b004099b940e",
+			"id": "6ed6e814-2ad3-479c-a10d-4ec8f926ac71",
 			"key": "--- Demonstration properties: Request Tests ---",
 			"value": "",
 			"type": "string"
