@@ -177,11 +177,14 @@
 									"header": [
 										{
 											"key": "Content-Type",
-											"value": "application/json"
+											"name": "Content-Type",
+											"value": "application/json",
+											"description": "",
+											"type": "text"
 										}
 									],
 									"cookie": [],
-									"body": "{\n  \"user\": {\n    \"$ref\": \"#/components/schemas/user\"\n  }\n}"
+									"body": "{\n    \"createdAt\": \"mollit minim\",\n    \"createdBy\": \"42068\",\n    \"id\": \"03c17f53-7e2e-427d-b55a-006b244f29ff\",\n    \"name\": \"George Costanza\",\n    \"updatedAt\": \"sunt labore cupid\",\n    \"updatedBy\": \"5665\"\n}"
 								}
 							]
 						},
@@ -307,7 +310,7 @@
 						"header": [
 							{
 								"key": "x-mock-response-name",
-								"value": "veniam adipisicing"
+								"value": "Get all network users"
 							},
 							{
 								"key": "Accept",
@@ -439,11 +442,33 @@
 			]
 		}
 	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "1c69f803-4416-4149-b023-c2ea60a845ef",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "9102839c-8849-423b-af59-9ef047933cc9",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
 	"variable": [
 		{
-			"id": "83309c01-1536-49fc-bb2f-0fd07798c2cf",
+			"id": "ee00f598-0e33-45a1-b36a-45f71c057c05",
 			"key": "baseUrl",
-			"value": "https://api.postmanova.com",
+			"value": "https://0a53ef19-e490-4d1e-af1a-4032c314acdb.mock.pstmn.io",
 			"type": "string"
 		}
 	]

@@ -546,7 +546,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "dc588ccf-1c00-4150-b7b1-7eff3dfd7aa4",
+				"id": "61afd055-135b-495b-bb20-fc3f4ac49263",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -556,7 +556,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "61d46a3d-f43f-490c-86ad-00f5fde95876",
+				"id": "06b644a2-4922-40c7-8733-49aeb9ed8b40",
 				"type": "text/javascript",
 				"exec": [
 					"pm.test(\"Status code is 200\", function () {",
@@ -568,7 +568,7 @@
 	],
 	"variable": [
 		{
-			"id": "8afe20c2-f565-4663-941d-66daa4b01d60",
+			"id": "3a380195-175f-4c1f-886c-d7f480838235",
 			"key": "baseUrl",
 			"value": "https://e6cb50e8-4aa7-4aa6-b593-c8f43d1fc7f5.mock.pstmn.io"
 		}
