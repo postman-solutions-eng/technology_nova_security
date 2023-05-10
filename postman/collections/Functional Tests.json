@@ -486,9 +486,7 @@
 							"    pm.response.to.have.status(200);",
 							"});",
 							"",
-							"pm.test(\"Response time is less than 200ms\", function () {",
-							"    pm.expect(pm.response.responseTime).to.be.below(200);",
-							"});"
+							""
 						],
 						"type": "text/javascript"
 					}
@@ -550,7 +548,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "95552bb9-f619-49c6-9689-b76b61863f88",
+				"id": "d1d48345-4d43-4bc5-89f0-7eceb38b612c",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -560,11 +558,15 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "aece2040-f182-445d-a0f6-557911ede743",
+				"id": "a878d994-30c9-4b72-a181-e42fd298a1f7",
 				"type": "text/javascript",
 				"exec": [
 					"pm.test(\"Status code is 200\", function () {",
 					"    pm.response.to.have.status(200);",
+					"});",
+					"",
+					"pm.test(\"Response time is less than 200ms\", function () {",
+					"    pm.expect(pm.response.responseTime).to.be.below(200);",
 					"});"
 				]
 			}
@@ -572,7 +574,7 @@
 	],
 	"variable": [
 		{
-			"id": "8afe20c2-f565-4663-941d-66daa4b01d60",
+			"id": "08c49a04-5e54-496b-96cb-ef4e99c4e211",
 			"key": "baseUrl",
 			"value": "https://e6cb50e8-4aa7-4aa6-b593-c8f43d1fc7f5.mock.pstmn.io"
 		}
