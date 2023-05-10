@@ -14,28 +14,6 @@ jobs:
         run: postman login --with-api-key ${{ secrets.POSTMAN_API_KEY }}
       - name: Run API tests
         run: |
-          postman collection run 25749314-766c655b-5bf3-4e27-aa3d-6175cde426bd --integration-id "129284-${{ github.run_id }}"
+          postman collection run "${{ github.workspace }}/postman/collections/Functional Tests.json" --integration-id "129284-${{ github.run_id }}"
           # Lint your API using Postman CLI
           postman api lint --integration-id 129284
-
-
-
-# name: Automated API tests using Postman CLI
-
-# on: push
-
-# jobs:
-#   automated-api-tests:
-#     runs-on: ubuntu-latest
-#     steps:
-#       - uses: actions/checkout@v3
-#       - name: Install Postman CLI
-#         run: |
-#           curl -o- "https://dl-cli.pstmn.io/install/linux64.sh" | sh
-#       - name: Login to Postman CLI
-#         run: postman login --with-api-key ${{ secrets.POSTMAN_API_KEY }}
-#       - name: Run API tests
-#         run: |
-#           postman collection run "${{ github.workspace }}/postman/collections/Functional Tests.json" --integration-id "129284-${{ github.run_id }}"
-#           # Lint your API using Postman CLI
-#           postman api lint --integration-id 129284
