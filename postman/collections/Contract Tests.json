@@ -432,7 +432,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "c918f9f3-9640-4787-b65d-0847851be83f",
+				"id": "42589bff-6691-4c06-8519-c9c847df0584",
 				"type": "text/javascript",
 				"exec": [
 					"// Generate tests with errors about 20% of the time.",
@@ -453,7 +453,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "fb31adc5-641b-40a0-93cd-2fab4b86bffd",
+				"id": "03b8aa7e-e204-4e1f-a032-cefd7255714b",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -463,48 +463,48 @@
 	],
 	"variable": [
 		{
-			"id": "e5b3ea59-4d43-4732-af41-aef628cc4271",
+			"id": "e064de05-ad58-4d09-bb8d-fdb27deb7e43",
 			"key": "--- Configuration properties ---",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "c75992ba-46d6-477a-b947-b21861bad850",
+			"id": "7a38d43f-9c3a-4d0c-aff3-ac576ab70238",
 			"key": "baseUrl",
 			"value": "https://cd0c3b1a-ed6a-4844-9f1f-d1cc89bb4ebc.mock.pstmn.io",
 			"type": "string"
 		},
 		{
-			"id": "035a1213-2df2-43be-b53e-f66807d50fc7",
+			"id": "ce3139f8-c74c-4e55-9253-b443ddd1c43a",
 			"key": "useResponsesWithErrors",
-			"value": "true",
+			"value": "false",
 			"type": "string"
 		},
 		{
-			"id": "7f5b5285-3bd1-493c-bfef-65ed9a2c899d",
+			"id": "feda5bea-9214-4839-bc57-7aa966597d23",
 			"key": "--- Demonstration properties: Response Tests ---",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "b288072f-21e3-4883-9ce1-3d2b7be67bfd",
+			"id": "3f9f13ed-0247-42a4-b5ea-06e929c13651",
 			"key": "validNetworksList",
 			"value": "Instance eu-1,Instance us-1,Instance ca-1"
 		},
 		{
-			"id": "3ed1e7b7-58c0-4cba-933b-79646edd5408",
+			"id": "35b191e0-472f-43e9-abcd-4cf306ef0e55",
 			"key": "requiredNetworkProperties",
 			"value": "instanceId,name,users",
 			"type": "string"
 		},
 		{
-			"id": "1f48df0a-eb08-4091-b10f-60fcb229781c",
+			"id": "e8f60f1c-0022-4f93-8927-710d44288320",
 			"key": "optionalNetworkProperties",
 			"value": "weekly_active_users,average_minutes_per_user,monthly_active_users",
 			"type": "string"
 		},
 		{
-			"id": "c8dfe2ee-8c34-4cc8-a90f-2441db4d9f48",
+			"id": "84b39d75-0e04-4328-a53b-29971ae4f86c",
 			"key": "--- Demonstration properties: Request Tests ---",
 			"value": "",
 			"type": "string"
