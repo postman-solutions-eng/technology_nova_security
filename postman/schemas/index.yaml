@@ -68,7 +68,7 @@ security:
   - api_key: []
 
 tags:
-  - description: This folder contains the requests around system users available to administrative users.
+  - description: This folder contains the requests around system users available to administrative users. 
     name: Admin
   - description: This folder contains endpoints available to monitor network security.
     name: Network
