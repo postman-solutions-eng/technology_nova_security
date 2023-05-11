@@ -1,10 +1,10 @@
 {
 	"info": {
-		"_postman_id": "4805f5f6-a300-4eaf-a10f-004a6bcda37e",
+		"_postman_id": "dfb8b3b3-1698-4b51-9f12-aab64472bd8b",
 		"name": "Contract Tests",
 		"description": "### Consumer-driven Contract Testing\n\nA consumer can create a collection like this one and then either in the same workspace, in a different workspace within the same organization, or in a partner workspace (if two different companies are collaborating), users can communicate a contract, collaborate around it, iterate over it, and implement an end-to-end process workflow which encapsulates all of these items.\n\n**Note that it is the recommendation of Postman that API specifications be used to define API contracts.** Still, many organizations are either still \"code first\" (instead of \"API first\") or are in some state of flux from the latter to the former.\n\n<img src=\"https://content.pstmn.io/b8a8cb2d-ce72-4d73-9846-75c1969c0caa/MV9zLXVqckdReVpzekJjU2RZM1BDeWJ3LnBuZw==\">",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-		"_uid": "16952209-4805f5f6-a300-4eaf-a10f-004a6bcda37e"
+		"_uid": "23437215-dfb8b3b3-1698-4b51-9f12-aab64472bd8b"
 	},
 	"item": [
 		{
@@ -13,7 +13,7 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "d8abe6cf-dbc1-4ebb-b9e8-185da1da9952",
+						"id": "f88219a0-ccda-44c8-9a81-11734fe68227",
 						"exec": [
 							"// INITIAL VARIABLES",
 							"responseJson                = pm.response.json();",
@@ -94,7 +94,7 @@
 				{
 					"listen": "prerequest",
 					"script": {
-						"id": "3e958d20-0fa2-4503-acf1-8d9237ca1416",
+						"id": "fb13b1b1-9bdd-4336-9b0a-50fab4a8e1ea",
 						"exec": [
 							"useResponsesWithErrors      = pm.collectionVariables.get('useResponsesWithErrors');",
 							"",
@@ -114,7 +114,7 @@
 					}
 				}
 			],
-			"id": "a0b047f8-fb7f-459a-8f1a-ef8cc8127222",
+			"id": "a378f6ad-baa4-4cc5-8f4b-92998c0a486c",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -139,7 +139,7 @@
 			},
 			"response": [
 				{
-					"id": "a15cc644-95ee-40cd-8a2d-de4fbb54a2d1",
+					"id": "c279e4a3-913e-404a-b43e-2f7f4c3e93c7",
 					"name": "Tests Fail",
 					"originalRequest": {
 						"method": "GET",
@@ -157,6 +157,7 @@
 					"status": "OK",
 					"code": 200,
 					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "html",
 					"header": [
 						{
 							"key": "Content-Type",
@@ -167,7 +168,7 @@
 					"body": "{\n  \"network\": [\n    {\n      \"instanceId\": \"dac5eac9-148d-a32e-b76b-3edee9da28f7\",\n      \"name\": \"Instance eu-1\",\n      \"users\": 631643,\n      \"monthly_active_users\": 5000,\n      \"weekly_active_users\": 3333,\n      \"average_minutes_per_user\": 19\n    },\n    {\n      \"instanceId\": \"dac5eac9-148d-a32e-b76b-90586jfke0r9\",\n      \"name\": \"Instance au-1\",\n      \"user\": 477,\n      \"monthly_active_users\": 35,\n      \"weekly_active_users\": 22,\n      \"average_minutes_per_user\": 10\n    },\n    {\n      \"instanceId\": \"dac5eac9-148d-a32e-b76b-cnu94308rcn8\",\n      \"name\": \"Instance ca-1\",\n      \"users\": 235436,\n      \"monthly_active_users\": 7890,\n      \"weekly_active_users\": 567,\n      \"average_minutes_per_user\": \"eleven\"\n    }\n  ]\n}"
 				},
 				{
-					"id": "a1b854d4-de2a-414b-84e8-35856941afa1",
+					"id": "c18229b9-7e05-40be-b181-444b986555f7",
 					"name": "Tests Pass",
 					"originalRequest": {
 						"method": "GET",
@@ -185,6 +186,7 @@
 					"status": "OK",
 					"code": 200,
 					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "html",
 					"header": [
 						{
 							"key": "Content-Type",
@@ -202,7 +204,7 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "4d0106a4-9c56-4fc7-b602-91dfcc0d8879",
+						"id": "1894f7f5-15f0-4c43-88b9-0b8338d7c0a2",
 						"exec": [
 							"// Initial values",
 							"requestJson = JSON.parse(pm.request.body.raw);",
@@ -245,7 +247,7 @@
 				{
 					"listen": "prerequest",
 					"script": {
-						"id": "012e0616-c554-4fbc-b1ab-c31ae1403c2c",
+						"id": "ec91e5e5-cad3-4b17-b786-7bd91040b390",
 						"exec": [
 							"useResponsesWithErrors      = pm.collectionVariables.get('useResponsesWithErrors');",
 							"",
@@ -284,7 +286,7 @@
 					}
 				}
 			],
-			"id": "b091af7d-c83b-47e4-a68b-969826cd23cb",
+			"id": "f0c9e75f-c162-4d45-8289-1fb14509c460",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -332,7 +334,7 @@
 			},
 			"response": [
 				{
-					"id": "3b076bf7-87dd-4070-aade-81ffc1ce7756",
+					"id": "f699cc53-057a-4ed2-804b-6e2b485dd2e8",
 					"name": "Tests Fail",
 					"originalRequest": {
 						"method": "POST",
@@ -369,6 +371,7 @@
 					"status": "OK",
 					"code": 200,
 					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "html",
 					"header": [
 						{
 							"key": "Content-Type",
@@ -379,7 +382,7 @@
 					"body": "{\n  \"user\": {\n    \"name\": \"George\",\n    \"id\": 192837,\n    \"email\": \"george_vandelayindustries.com\"\n  }\n}"
 				},
 				{
-					"id": "3d46403f-e936-4400-8564-1c45b2e78fb4",
+					"id": "283f0f38-286b-4efb-b809-0aa6f068044c",
 					"name": "Tests Pass",
 					"originalRequest": {
 						"method": "POST",
@@ -416,6 +419,7 @@
 					"status": "OK",
 					"code": 200,
 					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "html",
 					"header": [
 						{
 							"key": "Content-Type",
@@ -432,7 +436,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "42589bff-6691-4c06-8519-c9c847df0584",
+				"id": "d1bd1f3e-26b5-472a-b482-caf8c972f1d0",
 				"type": "text/javascript",
 				"exec": [
 					"// Generate tests with errors about 20% of the time.",
@@ -453,7 +457,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "03b8aa7e-e204-4e1f-a032-cefd7255714b",
+				"id": "88448753-a3dd-46aa-b39f-fd9734f80bc2",
 				"type": "text/javascript",
 				"exec": [
 					""
