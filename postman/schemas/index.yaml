@@ -64,8 +64,8 @@ info:
     url: https://opensource.org/license/bsd-1-clause/
   termsOfService: https://example.com/tos
   
-# security:
-#   - api_key: []
+security:
+  - api_key: []
 
 tags:
   - description: This folder contains the requests around system users available to administrative users. 
