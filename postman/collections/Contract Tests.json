@@ -23,7 +23,7 @@
 							"        ",
 							"",
 							"// CONSUMER-DRIVEN CONTRACT TESTS",
-							"// ------------------------------",
+							"// -------------------------------",
 							"",
 							"// CONTRACT TEST: At the root level, there can only be a network property",
 							"pm.test(\"Response does not contain other properties at the root level\", function () {",
