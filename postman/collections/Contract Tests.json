@@ -15,7 +15,7 @@
 					"script": {
 						"id": "d8abe6cf-dbc1-4ebb-b9e8-185da1da9952",
 						"exec": [
-							"// INITIAL VARIABLES",
+							"// INITIAL VARIABLES edited",
 							"responseJson                = pm.response.json();",
 							"validNetworksList           = pm.collectionVariables.get('validNetworksList').split(',');",
 							"requiredNetworkProperties   = pm.collectionVariables.get('requiredNetworkProperties').split(',');",
@@ -463,48 +463,48 @@
 	],
 	"variable": [
 		{
-			"id": "e064de05-ad58-4d09-bb8d-fdb27deb7e43",
+			"id": "162083c2-40ff-4687-9b68-676000bc3e92",
 			"key": "--- Configuration properties ---",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "7a38d43f-9c3a-4d0c-aff3-ac576ab70238",
+			"id": "246527d4-d479-4ebc-9c21-9572e2e7efe3",
 			"key": "baseUrl",
 			"value": "https://cd0c3b1a-ed6a-4844-9f1f-d1cc89bb4ebc.mock.pstmn.io",
 			"type": "string"
 		},
 		{
-			"id": "ce3139f8-c74c-4e55-9253-b443ddd1c43a",
+			"id": "1953d106-1a9c-4ab6-8fac-77bdde970600",
 			"key": "useResponsesWithErrors",
 			"value": "false",
 			"type": "string"
 		},
 		{
-			"id": "feda5bea-9214-4839-bc57-7aa966597d23",
+			"id": "d347fd42-3dcd-445f-aafb-4f3142d729f7",
 			"key": "--- Demonstration properties: Response Tests ---",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "3f9f13ed-0247-42a4-b5ea-06e929c13651",
+			"id": "5e2387d2-135f-47e8-adaf-d932657c0d73",
 			"key": "validNetworksList",
 			"value": "Instance eu-1,Instance us-1,Instance ca-1"
 		},
 		{
-			"id": "35b191e0-472f-43e9-abcd-4cf306ef0e55",
+			"id": "a64643a4-1c00-4d1c-9ae8-52cf449524d1",
 			"key": "requiredNetworkProperties",
 			"value": "instanceId,name,users",
 			"type": "string"
 		},
 		{
-			"id": "e8f60f1c-0022-4f93-8927-710d44288320",
+			"id": "a5e90730-ce15-420b-8d20-f4049ad28726",
 			"key": "optionalNetworkProperties",
 			"value": "weekly_active_users,average_minutes_per_user,monthly_active_users",
 			"type": "string"
 		},
 		{
-			"id": "84b39d75-0e04-4328-a53b-29971ae4f86c",
+			"id": "1131c912-c0d0-4ce5-b103-298f476a6637",
 			"key": "--- Demonstration properties: Request Tests ---",
 			"value": "",
 			"type": "string"
