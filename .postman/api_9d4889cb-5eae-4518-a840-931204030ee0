@@ -13,6 +13,7 @@ files[] = {"id":"16952209-4805f5f6-a300-4eaf-a10f-004a6bcda37e","path":"Contract
 files[] = {"id":"25749314-fdeadd0e-44c5-4e9c-a43f-c84d4ff2beab","path":"Contract Tests: Producer-driven.json","metaData":{}}
 files[] = {"id":"25749314-89984f9a-6b7b-4384-860b-cc90e3218002","path":"Documentation.json","metaData":{}}
 files[] = {"id":"25749314-766c655b-5bf3-4e27-aa3d-6175cde426bd","path":"Functional Tests.json","metaData":{}}
+files[] = {"id":"16871461-d0f95ad5-dcc9-490c-9fb4-f6ecba5d0b3e","path":"New Tests.json","metaData":{"generateCollectionPreferences":"{\"requestNameSource\":\"Fallback\",\"indentCharacter\":\"Space\",\"parametersResolution\":\"Schema\",\"folderStrategy\":\"Paths\",\"includeAuthInfoInExample\":true,\"keepImplicitHeaders\":false,\"includeDeprecated\":true,\"requestParametersResolution\":\"Schema\",\"updateCollectionSync\":true,\"exampleParametersResolution\":\"Schema\"}"}}
 files[] = {"id":"25749314-7af10eb8-0057-44aa-b9aa-8d5321daa469","path":"Security Tests.json","metaData":{}}
 
 [config.relations.collections.metaData]
