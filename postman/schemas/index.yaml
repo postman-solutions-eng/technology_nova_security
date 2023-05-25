@@ -7,7 +7,6 @@ x-providerName: postmanova.com
 servers:
   - url: https://api.postmanova.com
   - url: https://api1.postmanova.com
-  - url: https://api2.postmanova.com
 
 info:
   contact:
