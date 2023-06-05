@@ -1,7 +1,7 @@
 openapi: 3.0.3
-
 x-apiname: novaSecurityApi
 x-responsetime: 10000
+
 x-providerName: postmanova.com
 
 servers:
@@ -12,8 +12,7 @@ info:
     name: Example Support
     email: "admin@admin.com"
     url: "http://www.postman.com"
-  description:
-    |-
+  description: |-
     **The NOVA Security User Management API allows you to programmatically access NOVA network users and perform admin tasks.**
 
     When integrating the NOVA Security User Management API with other systems, it is good practice to keep an eye on activity that may pose a security risk. 
@@ -76,24 +75,16 @@ tags:
 paths:
   "/admin/{adminId}/users":
     get:
-      summary: Get all network users
-      description: ""
-        # |-
-        # This call fetches details about the all the network users currently registered in the system.
+      description: |-
+        This call fetches details about the all the network users currently registered in the system.
 
-        # The response will contain an array `users` object which would be a list of all the network users along with their details.
+        The response will contain an array `users` object which would be a list of all the network users along with their details.
 
       operationId: getAllNetworkUsers
       responses:
         "200":
-          description: Get all network users
           content:
             application/json:
-              schema:
-                  $ref: '#/components/schemas/User'
-                  items:
-                    $ref: '#/components/schemas/User'
-                  type: array
               examples:
                 Get all network users:
                   value:
@@ -108,8 +99,15 @@ paths:
                         id: 00932d3b-20f1-454f-a77e-38b4023163ea
                         name: "Elaine Benes"
                         updatedAt: 2019-02-12 19:34:49
+              schema:
+                  $ref: '#/components/schemas/User'
+                  items:
+                    $ref: '#/components/schemas/User'
+                  type: array
+          description: Get all network users
         "500":
           description: Internal server error
+      summary: Get all network users
       tags:
         - Admin
     parameters:
@@ -130,12 +128,10 @@ paths:
           type: string
   "/admin/{adminId}/users/{userId}":
     delete:
-      summary: Delete a network user
-      description: ""
-        # |-
-        # This call deletes an existing network user having the specified id.  
+      description: |-
+        This call deletes an existing network user having the specified id.  
 
-        # Response contains an `user` object with `id` of the network user which was deleted.
+        Response contains an `user` object with `id` of the network user which was deleted.
 
       operationId: deleteANetworkUser
       responses:
@@ -160,16 +156,15 @@ paths:
           description: Delete a network user
         "500":
           description: Internal server error
+      summary: Delete a network user
       tags:
         - Admin 
          
     get:
-      summary: Get a network user
-      description: ""
-        # |-
-        # This call fetches details about the specified network user.
+      description: |-
+        This call fetches details about the specified network user.
 
-        # The response will contain a `user` object which would contain all the details of the network user.
+        The response will contain a `user` object which would contain all the details of the network user.
 
       operationId: getNetworkuser
       responses:
@@ -184,6 +179,7 @@ paths:
           description: Get a network user
         "500":
           description: Internal server error
+      summary: Get a network user
       tags:
         - Admin 
     parameters:
@@ -204,14 +200,12 @@ paths:
           $ref: '#/components/schemas/User'
           type: string
     put:
-      summary: Update a network user
-      description: ""
-        # |-
-        # This call updates an existing network user.  
+      description: |-
+        This call updates an existing network user.  
 
-        # Request body should contain a `user` object with the fields which need to be updated. Only field which can be updated is `name`.
+        Request body should contain a `user` object with the fields which need to be updated. Only field which can be updated is `name`.
 
-        # Response contains a `user` object with all the details related to the created network user, namely, `id`, `name`, `email` etc.
+        Response contains a `user` object with all the details related to the created network user, namely, `id`, `name`, `email` etc.
 
       operationId: updateNetworkuser
       requestBody:
@@ -247,15 +241,15 @@ paths:
           description: Update a network user
         "500":
           description: Internal server error
+      summary: Update a network user
       tags:
         - Admin 
          
   /network:
     get:
-      description: ""
-        # |-
-        # The `/network` endpoint returns a network report with statistics on user activity, resource management, and found security risks. 
-        # The response contains an array of network information containing the `name`, `id`, `owner` and `uid` of each network.
+      description: |-
+        The `/network` endpoint returns a network report with statistics on user activity, resource management, and found security risks. 
+        The response contains an array of network information containing the `name`, `id`, `owner` and `uid` of each network.
 
       operationId: networkActivityReport
       responses:
