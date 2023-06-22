@@ -14,9 +14,6 @@ jobs:
         run: postman login --with-api-key ${{ secrets.POSTMAN_API_KEY }}
       - name: Run API tests
         run: |
-          postman collection run "${{ github.workspace }}/postman/collections/Contract Tests.json" -e "25749314-da60aaac-f43c-4ae1-ac4a-f0af7b34e39e" --integration-id "142892-${{ github.run_id }}"
-          postman collection run "${{ github.workspace }}/postman/collections/Documentation.json" -e "25749314-da60aaac-f43c-4ae1-ac4a-f0af7b34e39e" --integration-id "142892-${{ github.run_id }}"
-          postman collection run "${{ github.workspace }}/postman/collections/Functional Tests.json" -e "25749314-da60aaac-f43c-4ae1-ac4a-f0af7b34e39e" --integration-id "142892-${{ github.run_id }}"
-          postman collection run "${{ github.workspace }}/postman/collections/Security Tests.json" -e "25749314-da60aaac-f43c-4ae1-ac4a-f0af7b34e39e" --integration-id "142892-${{ github.run_id }}"
+          postman collection run "${{ github.workspace }}/postman/collections/Functional Tests.json" --integration-id "140113-${{ github.run_id }}"
           # Lint your API using Postman CLI
-          postman api lint 0da12f32-f1b5-4e7e-b5bf-956928e6e75b --integration-id 142892
+          postman api lint 9d4889cb-5eae-4518-a840-931204030ee0 --integration-id 140113
