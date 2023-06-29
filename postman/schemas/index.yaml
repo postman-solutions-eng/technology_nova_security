@@ -9,7 +9,7 @@ servers:
 
 info:
   contact:
-    name: Example Support
+    name: Example Support 
     email: "admin@admin.edu"
     url: "http://www.postman.com"
   description: |-
