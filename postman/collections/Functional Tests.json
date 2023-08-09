@@ -609,7 +609,7 @@
 						}
 					],
 					"cookie": [],
-					"body": "{\n \"network\": [\n  {\n   \"instanceId\": \"dac5eac9-148d-a32e-b76b-3edee9da28f7\",\n   \"name\": \"Instance eu-1\",\n   \"users\": 631643,\n   \"monthly_active_users\": 5000,\n   \"weekly_active_users\": 3333,\n   \"average_minutes_per_user\": 19\n  },\n  {\n   \"instanceId\": \"dac5eac9-148d-a32e-b76b-90586jfke0r9\",\n   \"name\": \"Instance us-1\",\n   \"users\": 477,\n   \"monthly_active_users\": 35,\n   \"weekly_active_users\": 22,\n   \"average_minutes_per_user\": 10\n  },\n  {\n   \"instanceId\": \"dac5eac9-148d-a32e-b76b-cnu94308rcn8\",\n   \"name\": \"Instance ca-1\",\n   \"users\": 235436,\n   \"monthly_active_users\": 7890,\n   \"weekly_active_users\": 567,\n   \"average_minutes_per_user\": 11\n  }\n ]\n}"
+					"body": "{\n \"network\": [\n  {\n   \"instanceId\": \"dac5eac9-148d-a32e-b76b-3edee9da28f7\",\n   \"name\": \"Instance eu-1\",\n   \"users\": 631642,\n   \"monthly_active_users\": 5000,\n   \"weekly_active_users\": 3333,\n   \"average_minutes_per_user\": 19\n  },\n  {\n   \"instanceId\": \"dac5eac9-148d-a32e-b76b-90586jfke0r9\",\n   \"name\": \"Instance us-1\",\n   \"users\": 477,\n   \"monthly_active_users\": 35,\n   \"weekly_active_users\": 22,\n   \"average_minutes_per_user\": 10\n  },\n  {\n   \"instanceId\": \"dac5eac9-148d-a32e-b76b-cnu94308rcn8\",\n   \"name\": \"Instance ca-1\",\n   \"users\": 235436,\n   \"monthly_active_users\": 7890,\n   \"weekly_active_users\": 567,\n   \"average_minutes_per_user\": 11\n  }\n ]\n}"
 				}
 			]
 		}
