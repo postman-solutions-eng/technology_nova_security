@@ -612,6 +612,76 @@
 					"body": "{\n \"network\": [\n  {\n   \"instanceId\": \"dac5eac9-148d-a32e-b76b-3edee9da28f7\",\n   \"name\": \"Instance eu-1\",\n   \"users\": 631642,\n   \"monthly_active_users\": 5000,\n   \"weekly_active_users\": 3333,\n   \"average_minutes_per_user\": 19\n  },\n  {\n   \"instanceId\": \"dac5eac9-148d-a32e-b76b-90586jfke0r9\",\n   \"name\": \"Instance us-1\",\n   \"users\": 477,\n   \"monthly_active_users\": 35,\n   \"weekly_active_users\": 22,\n   \"average_minutes_per_user\": 10\n  },\n  {\n   \"instanceId\": \"dac5eac9-148d-a32e-b76b-cnu94308rcn8\",\n   \"name\": \"Instance ca-1\",\n   \"users\": 235436,\n   \"monthly_active_users\": 7890,\n   \"weekly_active_users\": 567,\n   \"average_minutes_per_user\": 11\n  }\n ]\n}"
 				}
 			]
+		},
+		{
+			"name": "All network usage Copy",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "52629fde-84ce-443d-b99c-db045fbce141",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"id": "951f03d0-57a4-459f-80e0-8ab7607d2f4e",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/network",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"network"
+					]
+				},
+				"description": "The `/network` endpoint returns a network report with statistics on user activity, resource management, and found security risks. \nThe response contains an array of network information containing the `name`, `id`, `owner` and `uid` of each network."
+			},
+			"response": [
+				{
+					"id": "6838ab47-bfa6-4306-b957-8c9a527d0fa9",
+					"name": "Valid Response",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/network",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"network"
+							]
+						},
+						"description": "The `/network` endpoint returns a network report with statistics on user activity, resource management, and found security risks. \nThe response contains an array of network information containing the `name`, `id`, `owner` and `uid` of each network."
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "Text",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"enabled": true
+						}
+					],
+					"cookie": [],
+					"body": "{\n \"network\": [\n  {\n   \"instanceId\": \"dac5eac9-148d-a32e-b76b-3edee9da28f7\",\n   \"name\": \"Instance eu-1\",\n   \"users\": 631642,\n   \"monthly_active_users\": 5000,\n   \"weekly_active_users\": 3333,\n   \"average_minutes_per_user\": 19\n  },\n  {\n   \"instanceId\": \"dac5eac9-148d-a32e-b76b-90586jfke0r9\",\n   \"name\": \"Instance us-1\",\n   \"users\": 477,\n   \"monthly_active_users\": 35,\n   \"weekly_active_users\": 22,\n   \"average_minutes_per_user\": 10\n  },\n  {\n   \"instanceId\": \"dac5eac9-148d-a32e-b76b-cnu94308rcn8\",\n   \"name\": \"Instance ca-1\",\n   \"users\": 235436,\n   \"monthly_active_users\": 7890,\n   \"weekly_active_users\": 567,\n   \"average_minutes_per_user\": 11\n  }\n ]\n}"
+				}
+			]
 		}
 	],
 	"event": [
