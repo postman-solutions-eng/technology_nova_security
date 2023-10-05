@@ -2,7 +2,7 @@ openapi: 3.0.3
 x-apiname: novaSecurityApi
 x-responsetime: 10000
 
-x-providerName: postmanova.com
+x-providerName: postmanova.com 
 
 servers:
   - url: https://f63cb6ed-1814-4022-a576-12423186dae7.mock.pstmn.io
