@@ -137,7 +137,7 @@
 						"network"
 					]
 				},
-				"description": "The `/network` endpoint returns a network report with statistics on user activity, resource management, and found security risks. \nThe response contains an array of network information containing the `name`, `id`, `owner` and `uid` of each network."
+				"description": "The `/network` endpoint returns a network report with statistics on user activity, resource management, and found security risks.  \nThe response contains an array of network information containing the `name`, `id`, `owner` and `uid` of each network.\n\nDemo Update"
 			},
 			"response": [
 				{
