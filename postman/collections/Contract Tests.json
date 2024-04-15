@@ -86,7 +86,9 @@
 							"        pm.expect(network.weekly_active_users).to.be.a('number');",
 							"    });",
 							"",
-							"});"
+							"});",
+							"",
+							"//end of tests"
 						],
 						"type": "text/javascript"
 					}
