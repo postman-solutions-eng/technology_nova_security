@@ -157,7 +157,6 @@
 					"status": "OK",
 					"code": 200,
 					"_postman_previewlanguage": "json",
-					"_postman_previewtype": "html",
 					"header": [
 						{
 							"key": "Content-Type",
@@ -186,7 +185,6 @@
 					"status": "OK",
 					"code": 200,
 					"_postman_previewlanguage": "json",
-					"_postman_previewtype": "html",
 					"header": [
 						{
 							"key": "Content-Type",
@@ -371,7 +369,6 @@
 					"status": "OK",
 					"code": 200,
 					"_postman_previewlanguage": "json",
-					"_postman_previewtype": "html",
 					"header": [
 						{
 							"key": "Content-Type",
@@ -419,7 +416,6 @@
 					"status": "OK",
 					"code": 200,
 					"_postman_previewlanguage": "json",
-					"_postman_previewtype": "html",
 					"header": [
 						{
 							"key": "Content-Type",
@@ -467,48 +463,48 @@
 	],
 	"variable": [
 		{
-			"id": "162083c2-40ff-4687-9b68-676000bc3e92",
+			"id": "37eeb0ab-cced-4a7b-bf46-b4ceb2961ee7",
 			"key": "--- Configuration properties ---",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "246527d4-d479-4ebc-9c21-9572e2e7efe3",
+			"id": "73fd742b-93e6-4ac2-8035-12b9551d098c",
 			"key": "baseUrl",
 			"value": "https://cd0c3b1a-ed6a-4844-9f1f-d1cc89bb4ebc.mock.pstmn.io",
 			"type": "string"
 		},
 		{
-			"id": "1953d106-1a9c-4ab6-8fac-77bdde970600",
+			"id": "ad3fd4dc-63c8-43f5-91cc-7ff449b88686",
 			"key": "useResponsesWithErrors",
 			"value": "false",
 			"type": "string"
 		},
 		{
-			"id": "d347fd42-3dcd-445f-aafb-4f3142d729f7",
+			"id": "e514246e-a5b1-4791-a804-978d86073731",
 			"key": "--- Demonstration properties: Response Tests ---",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "5e2387d2-135f-47e8-adaf-d932657c0d73",
+			"id": "49a05609-1054-41ea-863e-331d95eacaef",
 			"key": "validNetworksList",
 			"value": "Instance eu-1,Instance us-1,Instance ca-1"
 		},
 		{
-			"id": "a64643a4-1c00-4d1c-9ae8-52cf449524d1",
+			"id": "f4e002ea-b191-4437-b6db-44cbc1ae7f4d",
 			"key": "requiredNetworkProperties",
 			"value": "instanceId,name,users",
 			"type": "string"
 		},
 		{
-			"id": "a5e90730-ce15-420b-8d20-f4049ad28726",
+			"id": "2c9b5a5a-219d-4ce7-b14c-518e5740ed48",
 			"key": "optionalNetworkProperties",
 			"value": "weekly_active_users,average_minutes_per_user,monthly_active_users",
 			"type": "string"
 		},
 		{
-			"id": "1131c912-c0d0-4ce5-b103-298f476a6637",
+			"id": "5926cb5e-7b0e-47c5-b481-409a598fb1dc",
 			"key": "--- Demonstration properties: Request Tests ---",
 			"value": "",
 			"type": "string"
