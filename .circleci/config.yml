@@ -17,7 +17,7 @@ jobs:
             postman collection run "postman/collections/Functional Tests.json" -e "23437215-f3656fa8-dc4d-4663-832e-fa87ff76ecc9" --integration-id "126710-${CIRCLE_WORKFLOW_JOB_ID}"
       - run:
           name: Lint your API using Postman CLI
-          command: postman api lint --integration-id 126710
+          command: postman api lint 50988ddd-d57e-42dc-b4f1-1511326cf8d4 --integration-id 126710
 
 workflows:
   version: 2
