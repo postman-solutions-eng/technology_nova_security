@@ -157,7 +157,6 @@
 					"status": "OK",
 					"code": 200,
 					"_postman_previewlanguage": "json",
-					"_postman_previewtype": "html",
 					"header": [
 						{
 							"key": "Content-Type",
@@ -186,7 +185,195 @@
 					"status": "OK",
 					"code": 200,
 					"_postman_previewlanguage": "json",
-					"_postman_previewtype": "html",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n  \"network\": [\n    {\n      \"instanceId\": \"dac5eac9-148d-a32e-b76b-3edee9da28f7\",\n      \"name\": \"Instance eu-1\",\n      \"users\": 631643,\n      \"monthly_active_users\": 5000,\n      \"weekly_active_users\": 3333,\n      \"average_minutes_per_user\": 19\n    },\n    {\n      \"instanceId\": \"dac5eac9-148d-a32e-b76b-90586jfke0r9\",\n      \"name\": \"Instance us-1\",\n      \"users\": 477,\n      \"monthly_active_users\": 35,\n      \"weekly_active_users\": 22,\n      \"average_minutes_per_user\": 10\n    },\n    {\n      \"instanceId\": \"dac5eac9-148d-a32e-b76b-cnu94308rcn8\",\n      \"name\": \"Instance ca-1\",\n      \"users\": 235436,\n      \"monthly_active_users\": 7890,\n      \"weekly_active_users\": 567,\n      \"average_minutes_per_user\": 11\n    }\n  ]\n}"
+				}
+			]
+		},
+		{
+			"name": "Response Tests Copy",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "33add563-62a7-4d5f-b4ac-28975e839c07",
+						"exec": [
+							"// INITIAL VARIABLES edited",
+							"responseJson                = pm.response.json();",
+							"validNetworksList           = pm.collectionVariables.get('validNetworksList').split(',');",
+							"requiredNetworkProperties   = pm.collectionVariables.get('requiredNetworkProperties').split(',');",
+							"optionalNetworkProperties   = pm.collectionVariables.get('optionalNetworkProperties').split(',');",
+							"        ",
+							"",
+							"// CONSUMER-DRIVEN CONTRACT TESTS",
+							"// -------------------------------",
+							"",
+							"// CONTRACT TEST: At the root level, there can only be a network property",
+							"pm.test(\"Response does not contain other properties at the root level\", function () {",
+							"    // There cannot be other properties at the root level",
+							"    pm.expect(Object.keys(responseJson)).to.include.members(['network']).and.to.have.length(1);",
+							"});",
+							"",
+							"// CONTRACT TEST: The network property must be a list of network objects.",
+							"pm.test(\"Response contains a list of networks which contains at least one network\", function () {",
+							"    pm.expect(responseJson.network).to.be.an('array').with.length.greaterThan(0);",
+							"});",
+							"",
+							"",
+							"// Test each network item",
+							"responseJson.network.forEach( function (network, index) {",
+							"",
+							"    // CONTRACT TESTS: Test mandatory response properities",
+							"    pm.test(\"Network \" + index + \" contains all required properties\", function () {",
+							"        pm.expect(Object.keys(network)).to.include.members(requiredNetworkProperties);",
+							"    });",
+							"",
+							"    pm.test(\"Network \" + index + \" contains a name property with a string value\", function () {",
+							"        pm.expect(network.name).and.to.be.a('string')",
+							"    });",
+							"",
+							"    pm.test(\"Network \" + index + \"'s name (\" + network.name + \") is in valid network list: \" + validNetworksList, function () {",
+							"        pm.expect(network.name).to.be.oneOf(validNetworksList);",
+							"    });",
+							"",
+							"    pm.test(\"Network \" + index + \" contains a users property with an number value\", function () {",
+							"        pm.expect(network.users).and.to.be.a('number');",
+							"    });",
+							"",
+							"    pm.test(\"Network \" + index + \" contains a properly formatted instanceId\", function () {",
+							"",
+							"        // Regular expresssion for a string with the following format:",
+							"        // dac5eac9-148d-a32e-b76b-3edee9da28f7",
+							"        instanceIdRe = /\\w{8}-\\w{4}-\\w{4}-\\w{4}-\\w{12}/g;",
+							"",
+							"        pm.expect(network.instanceId).to.be.a('string');",
+							"        pm.expect(network.instanceId.match(instanceIdRe)).to.have.length(1);",
+							"    });",
+							"",
+							"    // CONTRACT TEST: Test optional response properities",
+							"    if('average_minutes_per_user' in network) {",
+							"        pm.test(\"Network \" + index + \" contains a users average_minutes_per_user property with an number value\", function () {",
+							"",
+							"            pm.expect(network.average_minutes_per_user).to.be.a('number');",
+							"        });",
+							"    }",
+							"",
+							"    // Extra tests for the remaining fields in the example response",
+							"    pm.test(\"Network \" + index + \" contains a monthly_active_users property with an number value\", function () {",
+							"        ",
+							"        pm.expect(network.monthly_active_users).to.be.a('number');",
+							"    });",
+							"",
+							"    pm.test(\"Network \" + index + \" contains a users weekly_active_users property with an number value\", function () {",
+							"",
+							"        pm.expect(network.weekly_active_users).to.be.a('number');",
+							"    });",
+							"",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				},
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "01edd288-4680-4bd1-9f42-6b82311a139c",
+						"exec": [
+							"useResponsesWithErrors      = pm.collectionVariables.get('useResponsesWithErrors');",
+							"",
+							"",
+							"if(useResponsesWithErrors == 'true'){",
+							"    pm.request.headers.insert({ \"key\": \"x-mock-response-name\",",
+							"                                \"value\": \"Tests Fail\" ",
+							"    });",
+							"}",
+							"else {",
+							"    pm.request.headers.insert({ \"key\": \"x-mock-response-name\",",
+							"                                \"value\": \"Tests Pass\" ",
+							"    });",
+							"}"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"id": "e27a467b-f4e1-4f08-bc23-7785fd9568a4",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "{{baseUrl}}/network",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"network"
+					]
+				},
+				"description": "The `/network` endpoint returns a network report with statistics on user activity, resource management, and found security risks. \nThe response contains an array of network information containing the `name`, `id`, `owner` and `uid` of each network."
+			},
+			"response": [
+				{
+					"id": "e4aabf11-6892-40a9-a234-4f5b2f0add6f",
+					"name": "Tests Fail",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/network",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"network"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n  \"network\": [\n    {\n      \"instanceId\": \"dac5eac9-148d-a32e-b76b-3edee9da28f7\",\n      \"name\": \"Instance eu-1\",\n      \"users\": 631643,\n      \"monthly_active_users\": 5000,\n      \"weekly_active_users\": 3333,\n      \"average_minutes_per_user\": 19\n    },\n    {\n      \"instanceId\": \"dac5eac9-148d-a32e-b76b-90586jfke0r9\",\n      \"name\": \"Instance au-1\",\n      \"user\": 477,\n      \"monthly_active_users\": 35,\n      \"weekly_active_users\": 22,\n      \"average_minutes_per_user\": 10\n    },\n    {\n      \"instanceId\": \"dac5eac9-148d-a32e-b76b-cnu94308rcn8\",\n      \"name\": \"Instance ca-1\",\n      \"users\": 235436,\n      \"monthly_active_users\": 7890,\n      \"weekly_active_users\": 567,\n      \"average_minutes_per_user\": \"eleven\"\n    }\n  ]\n}"
+				},
+				{
+					"id": "1c46ac17-27c8-406a-938c-d956babe8dc7",
+					"name": "Tests Pass",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/network",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"network"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
 					"header": [
 						{
 							"key": "Content-Type",
@@ -371,7 +558,6 @@
 					"status": "OK",
 					"code": 200,
 					"_postman_previewlanguage": "json",
-					"_postman_previewtype": "html",
 					"header": [
 						{
 							"key": "Content-Type",
@@ -419,7 +605,6 @@
 					"status": "OK",
 					"code": 200,
 					"_postman_previewlanguage": "json",
-					"_postman_previewtype": "html",
 					"header": [
 						{
 							"key": "Content-Type",
