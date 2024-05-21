@@ -12,6 +12,7 @@ rootDirectory = postman/collections
 files[] = {"id":"23437215-f6f13b7b-2dc9-4091-ba8a-92a416fb6dc1","path":"Contract Tests.json","metaData":{}}
 files[] = {"id":"23437215-b28728c9-3409-41e8-8039-45c0e1e19809","path":"Documentation.json","metaData":{}}
 files[] = {"id":"23437215-dc8175f3-8eb2-4ecd-b873-9e7a2fa1e2a0","path":"Functional Tests.json","metaData":{}}
+files[] = {"id":"25749314-bc73f31d-04da-4b07-a482-cbdbcbc2ed22","path":"Generated.json","metaData":{"generateCollectionPreferences":"{\"requestNameSource\":\"Fallback\",\"indentCharacter\":\"Space\",\"parametersResolution\":\"Schema\",\"folderStrategy\":\"Paths\",\"includeAuthInfoInExample\":true,\"enableOptionalParameters\":true,\"keepImplicitHeaders\":false,\"includeDeprecated\":true,\"alwaysInheritAuthentication\":false,\"updateCollectionSync\":true,\"requestParametersResolution\":\"Schema\",\"exampleParametersResolution\":\"Schema\"}"}}
 files[] = {"id":"23437215-6513009e-33c8-443f-8b12-77eb98c28e42","path":"Security Tests.json","metaData":{}}
 
 [config.relations.collections.metaData]
