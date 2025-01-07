@@ -145,13 +145,9 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://cd0c3b1a-ed6a-4844-9f1f-d1cc89bb4ebc.mock.pstmn.io/network",
-							"protocol": "https",
+							"raw": "{{baseUrl}}/network",
 							"host": [
-								"cd0c3b1a-ed6a-4844-9f1f-d1cc89bb4ebc",
-								"mock",
-								"pstmn",
-								"io"
+								"{{baseUrl}}"
 							],
 							"path": [
 								"network"
@@ -351,13 +347,9 @@
 							}
 						},
 						"url": {
-							"raw": "https://cd0c3b1a-ed6a-4844-9f1f-d1cc89bb4ebc.mock.pstmn.io/admin/:adminId/user/new",
-							"protocol": "https",
+							"raw": "{{baseUrl}}/admin/:adminId/user/new",
 							"host": [
-								"cd0c3b1a-ed6a-4844-9f1f-d1cc89bb4ebc",
-								"mock",
-								"pstmn",
-								"io"
+								"{{baseUrl}}"
 							],
 							"path": [
 								"admin",
@@ -471,48 +463,48 @@
 	],
 	"variable": [
 		{
-			"id": "076b7f59-9a91-4ec4-8d60-996e86085f84",
+			"id": "c0a9410b-72bd-45c7-b845-ea004c3c27b5",
 			"key": "--- Configuration properties ---",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "12699136-1625-4866-8621-81cb3b506345",
+			"id": "7a692b1a-a91c-4af5-8fbb-869924680fef",
 			"key": "baseUrl",
 			"value": "https://cd0c3b1a-ed6a-4844-9f1f-d1cc89bb4ebc.mock.pstmn.io",
 			"type": "string"
 		},
 		{
-			"id": "af4f1288-88b4-44c8-8278-545ff2e9ded5",
+			"id": "67693ca4-58cb-465d-b3d7-2a306442ee77",
 			"key": "useResponsesWithErrors",
 			"value": "false",
 			"type": "string"
 		},
 		{
-			"id": "a9c99a9c-4513-49ca-968a-0a6c0de1de0b",
+			"id": "56d6e6cd-42c8-4920-a4d2-139c148bb164",
 			"key": "--- Demonstration properties: Response Tests ---",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "c3659dd8-939a-4e9a-94ea-43f8245617de",
+			"id": "b3ec6d4d-b2df-4240-b610-d4d09412c424",
 			"key": "validNetworksList",
 			"value": "Instance eu-1,Instance us-1,Instance ca-1"
 		},
 		{
-			"id": "3bdfc13a-8730-4f47-9bed-4bfc440c1279",
+			"id": "67ee12a4-55b1-484e-8a35-bc50105562f1",
 			"key": "requiredNetworkProperties",
 			"value": "instanceId,name,users",
 			"type": "string"
 		},
 		{
-			"id": "23aabc67-7d31-4ac0-8f9b-cf9888c7fe91",
+			"id": "61407fc2-f9cb-4147-a574-987edb00a846",
 			"key": "optionalNetworkProperties",
 			"value": "weekly_active_users,average_minutes_per_user,monthly_active_users",
 			"type": "string"
 		},
 		{
-			"id": "dcdc61b1-bea3-4ce6-b765-c1c62e7173f7",
+			"id": "451cab3e-499b-4cec-a7bc-8d3f6b8579fe",
 			"key": "--- Demonstration properties: Request Tests ---",
 			"value": "",
 			"type": "string"
