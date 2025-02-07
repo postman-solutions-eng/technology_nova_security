@@ -193,7 +193,7 @@ paths:
           type: string
       - in: path
         description: Get user
-#        example: 1234-4321-1234-4321
+        # example: 1234-4321-1234-4321
         name: userId
         required: true
         schema:
@@ -241,6 +241,8 @@ paths:
           description: Update a network user
         "500":
           description: Internal server error
+        # "510":
+        #   description : Not Extended
       summary: Update a network user
       tags:
         - Admin 
