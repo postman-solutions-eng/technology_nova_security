@@ -10,7 +10,7 @@ servers:
 info:
   contact:
     name: Example Support
-    # email: "admin@admin.edu"
+    email: "admin@admin.edu"
     url: "http://www.postman.com"
   description: |-
     **The NOVA Security Users Management API allows you to programmatically access NOVA network users and perform admin tasks.**
@@ -107,7 +107,7 @@ paths:
           description: Get all network users
         "500":
           description: Internal server error
-      # summary: Get all network users
+      summary: Get all network users
       tags:
         - Admin
     parameters:
