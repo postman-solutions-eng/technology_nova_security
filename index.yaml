@@ -58,7 +58,7 @@ info:
     ```
     # API Reference
   title: NOVA Security APIs
-  version: 1.1.0
+  version: 1.1.1
   license:
     name: BSD-1-Clause
     url: https://opensource.org/license/bsd-1-clause/
